@@ -1,5 +1,5 @@
 var play = {
-    crystalVals: [0, 0, 0, 0],
+    crystalVals: [],
     wins: 0,
     losses: 0,
     currentSum: 0,
@@ -41,7 +41,7 @@ var play = {
     },
 
     reset: function() {
-        this.crystalVals = [0, 0, 0, 0];
+        this.crystalVals = [];
         this.currentSum = 0;
         this.targetSum = 0;
         this.newValues();
