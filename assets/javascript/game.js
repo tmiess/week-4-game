@@ -29,12 +29,10 @@ var play = {
 
     compare: function() {
         if (this.currentSum === this.targetSum) {
-            //display: you win
             this.wins++;
             this.reset();
         }
         else if (this.currentSum > this.targetSum) {
-            //display: you lose
             this.losses++;
             this.reset();
         }
@@ -50,6 +48,17 @@ var play = {
 
 };
 
+jQuery.fn.shake = function(intShakes, intDistance, intDuration) {
+    this.each(function() {
+        $(this).css("position", "relative");
+        for (var x = 1; x <= intShakes; x++) {
+            $(this).animate({ left: (intDistance * -1) }, (((intDuration / intShakes) / 4)))
+                .animate({ left: intDistance }, ((intDuration / intShakes) / 2))
+                .animate({ left: 0 }, (((intDuration / intShakes) / 4)));
+        }
+    });
+    return this;
+};
 
 
 $("document").ready(function() {
@@ -57,21 +66,25 @@ $("document").ready(function() {
     play.newValues();
 
     $("#crystalOne").click(function() {
+        $("#crystalOne").shake(3, 10, 400);
         play.adder(0);
         play.compare();
     });
 
     $("#crystalTwo").click(function() {
+        $("#crystalTwo").shake(3, 10, 400);
         play.adder(1);
         play.compare();
     });
 
     $("#crystalThree").click(function() {
+        $("#crystalThree").shake(3, 10, 400);
         play.adder(2);
         play.compare();
     });
 
     $("#crystalFour").click(function() {
+        $("#crystalFour").shake(3, 10, 400);
         play.adder(3);
         play.compare();
     });

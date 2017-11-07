@@ -6,6 +6,7 @@ body {
     background-color: coral;
     margin: auto;
     padding: 10px;
+    max-width: 90%;
 }
 
 #crystalOne,
@@ -15,7 +16,10 @@ body {
     width: 100px;
     height: auto;
     padding: 10px;
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 #title {
@@ -30,16 +34,17 @@ body {
     margin: 5px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    background-color: black;
+    background-color: #333333;
     color: coral;
     font-style: italic;
+    font-size: larger;
 }
 
 #numbers {
     font-family: 'Ubuntu', sans-serif;
-    padding: 10px;
+    padding: 15px;
     margin: 5px;
-    background-color: black;
+    background-color: #333333;
     color: coral;
     text-align: center;
 }
