@@ -38,6 +38,7 @@ body {
     color: coral;
     font-style: italic;
     font-size: larger;
+    border-radius: 50px;
 }
 
 #numbers {
@@ -47,6 +48,7 @@ body {
     background-color: #333333;
     color: coral;
     text-align: center;
+    border-radius: 50px;
 }
 
 #numberText,
