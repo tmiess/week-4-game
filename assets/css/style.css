@@ -1,0 +1,25 @@
+body {
+    background-color: coral;
+}
+
+#crystalOne,
+#crystalTwo,
+#crystalThree,
+#crystalFour {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+}
+
+#title {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+#instructions {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
